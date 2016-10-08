@@ -12,8 +12,14 @@ import 'FabButton.dart';
     template: '''
       <div>
         <fab dir="down">
-          <fab-toggle>+</fab-toggle>
-          <fab-button>A</fab-button>
+          <fab-toggle>
+            +
+          </fab-toggle>
+          <fab-button>
+            <div>
+            <i class="material-icons">done</i>
+            </div>
+          </fab-button>
           <fab-button>B</fab-button>
           <fab-button>C</fab-button>
           <fab-button>D</fab-button>
