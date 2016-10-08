@@ -5,15 +5,15 @@ import 'package:angular2/core.dart';
 @Component(
   selector: 'fab-toggle',
   template: '''
-    <a
-      href="#"
+    <div
+      href=""
       class="fab-toggle"
       (click)="onClick.emit(\$event)">
       <span
         [class]="'icon-' + icon">
       </span>
       <ng-content></ng-content>
-    </a>
+    </div>
   '''
 )
 class FabToggle {

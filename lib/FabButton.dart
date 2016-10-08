@@ -5,19 +5,18 @@ import 'package:angular2/core.dart';
 @Component(
   selector: 'fab-button',
   template: '''
-    <a
+    <div
       #anchor
-      href="#"
       class="fab-item"
       (click)="onClick.emit(\$event)">
       <span [class]="'icon-' + icon">
       </span>
       <ng-content></ng-content>
-    </a>
+    </div>
   '''
 )
 class FabButton {
-  @Input() String icon;
+  @Input() String icon = '';
   @Output() EventEmitter onClick = new EventEmitter();
   @ViewChild('anchor') ElementRef element;
 }
